@@ -6,16 +6,30 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      // flex-wrap: nowrap;
+      margin: 0 auto;
+      padding: 10px 10px;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,10 +40,17 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 10px 10px;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @phone {
+       
+      }
     }
 
     .img-content {
@@ -45,6 +66,10 @@
     img {
       border-radius: 10px;
     }
+
+    @media @phone {
+      width: 100%
+    }
   }
 
   .content-pick {
@@ -53,9 +78,40 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      padding: 10px 10px;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 10px 10px;
+      }
     }
   }
 }// home
+
+.head-section {
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-bottom: 2px dashed lightgray;
+
+  @media @phone {
+    width: 80%;
+  }
+
+  h2{
+    margin: 10px 10px 10px 0px;
+  }
+}
+
+.btn{
+  .buttondesign;
+}
