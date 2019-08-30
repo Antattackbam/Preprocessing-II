@@ -1,11 +1,21 @@
 // Navigation Styles here
 header{
     border-bottom: 1px dashed lightgray;
+    background-color: rgb(82, 82, 82);
+    position: fixed;
+    opacity: .9;
+    top: 0px;
+    width: 100%;
 
     @media @phone {
         width: 100%;
         
     }
+}
+
+header:hover{
+    background-color: rgba(51, 51, 51, 0.925);
+    opacity: 1;
 }
 
 nav {
@@ -28,6 +38,13 @@ nav {
         font-size: 3.2rem;
         font-family: @pagefont;
         margin-top: 10px;
+        .funbusanimate;
+    }
+
+    p:hover{
+        font-size: 3.5rem;
+        margin-top: 6px;
+        color: blue;
     }
 
     a{
@@ -35,6 +52,12 @@ nav {
         text-decoration: none;
         padding-right: 20px;
         font-size: 1.2rem;
+        .funbusanimate;
+    }
+
+    a:hover{
+        font-size: 1.5rem;
+        text-decoration: none;
     }
 }
 

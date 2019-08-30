@@ -6,6 +6,7 @@
 
   <title>Fun Bus Travel Agency - Solution</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,7 @@
       <a href="#">Home</a>
       <a href="#">About Us</a>
       <a href="#">Blog</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
     </nav>
   </header>
@@ -88,6 +89,40 @@
       </div>
     </section>
   </div><!-- container -->
+
+  <form id="contact" class="busform">
+      <div class="form-group">
+          <label for="exampleFormControlSelect2">Select Desired Package</label>
+          <select class="form-control">
+              <option>Fun In the Sun</option>
+              <option>Mountain Excursion</option>
+              <option>Island Getaway</option>
+              <option>Custom Package</option>
+            </select>
+      </div>
+      <div class="form-group">
+          <label for="exampleInputPassword1">Name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+        </div>
+    <div class="form-grou">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Phone Number</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Special Instructions</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your Wish is Our Command">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Alert me of specials!</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
